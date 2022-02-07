@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bigquery
+    schema: jaffle_shop
+    database: dbt-tutorial
+    tables:
+      - name: customers
