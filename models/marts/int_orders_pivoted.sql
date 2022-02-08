@@ -1,4 +1,4 @@
-{%- set payment_methods = ['bank_transfer', 'coupon', 'credit_card', 'gift_card'] -%}
+{%- set payment_methods = get_payment_methods() -%}
 
 with payments as (
     select * from {{ ref('stg_payments')}}
